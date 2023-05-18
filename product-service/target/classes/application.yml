@@ -1,0 +1,13 @@
+springdoc:
+  api-docs:
+    path: /product-mgmt-doc-openapi
+
+spring:
+  application:
+    name: product-service
+
+  profiles:
+    active: development
+
+  config:
+    import: configserver:http://localhost:6666/

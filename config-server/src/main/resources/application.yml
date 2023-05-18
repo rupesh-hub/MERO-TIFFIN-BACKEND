@@ -1,0 +1,16 @@
+#SERVER CONFIGURATION
+server:
+  port: 6666
+
+#SPRING APP CONFIGURATION
+spring:
+  application:
+    name: config-server
+
+  #CLOUD CONFIGURATION - GIT URL - CONFIGURATION FILE
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rupesh-hub/config-server
+          clone-on-start: true

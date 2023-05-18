@@ -1,0 +1,10 @@
+springdoc:
+  api-docs:
+    path: /user-mgmt-doc-openapi
+spring:
+  application:
+    name: user-management
+  profiles:
+    active: development
+  config:
+    import: configserver:http://localhost:6666/
